@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/busca-cep', [CepController::class, 'buscaCep']);
-Route::post('/buscar', [CepController::class, 'buscarCepDigitado']);
+Route::get('/buscar', [CepController::class, 'buscarCepDigitado']);

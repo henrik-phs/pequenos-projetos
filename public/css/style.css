@@ -1,0 +1,38 @@
+label {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0A0531;
+}
+
+.navegacao {
+    padding: 20px 0;
+    background: linear-gradient(to right, #0c0257, #1803b4, #0c0257);
+}
+
+.menu-icon {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn-busca {
+    margin-top: 10px;
+}
+
+.titulo-navegacao {
+    color: #fff;
+    font-weight: 600;
+}
+
+@media(max-width: 500px) {
+    .menu-icon {
+        font-size: 20px !important;
+    }
+    .titulo-navegacao {
+        font-size: 20px;
+    }
+    .btn-busca {
+        width: 100%;
+    }
+}

@@ -8,13 +8,16 @@ class CepController extends Controller
 {
     public function buscaCep()
     {
-        return view('busca-cep');
+        return view('busca-cep.busca-cep');
     }
 
     public function buscarCepDigitado(Request $request)
     {
-        $executar = $this->executa($request->cep);
+        $retorno = $this->executa($request->cep);
         
+        return view('busca-cep.busca-cep', [
+            'retorno' => $retorno
+        ]);
     }
 
     public function executa($cep)
@@ -30,6 +33,6 @@ class CepController extends Controller
         $response = curl_exec($curl);
 
         curl_close($curl);
-        return $response;
+        return json_decode($response);
     }
 }
