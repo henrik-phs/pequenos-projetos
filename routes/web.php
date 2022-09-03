@@ -20,3 +20,7 @@ Route::get('/', function () {
 
 Route::get('/busca-cep', [CepController::class, 'buscaCep']);
 Route::get('/buscar', [CepController::class, 'buscarCepDigitado']);
+
+Route::get('/calculadoras/combustivel', function () {
+    return view('calculadoras.calculo-combustivel');
+});

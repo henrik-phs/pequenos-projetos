@@ -1,8 +1,16 @@
-label {
+.lbl {
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
     color: #0A0531;
+}
+
+.input-control {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #0c0257;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 .navegacao {
@@ -23,6 +31,10 @@ label {
 .titulo-navegacao {
     color: #fff;
     font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 10px;
 }
 
 @media(max-width: 500px) {

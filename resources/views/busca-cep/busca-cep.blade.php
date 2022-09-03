@@ -10,7 +10,7 @@
                 @csrf
 
                 <div class="form-group">
-                    <label for="cep">Informe o CEP:</label>
+                    <label class="lbl" for="cep">Informe o CEP:</label>
                     <input type="text" name="cep" id="cep" class="form-control">
                 </div>
 
